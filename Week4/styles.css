@@ -1,0 +1,248 @@
+html {
+    margin: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menu-button{
+    display: block;
+    height:3rem;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    cursor: pointer;
+}
+
+nav{
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.display-flex {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.navigation-bar{
+    display:none;
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-option{
+    display: block;
+    border: 1px solid gray;
+    background-color: white;
+    text-align: center;
+    margin: 0;
+    z-index: 1;
+    justify-content: left;
+    padding: 10px 10px;
+}
+
+#menu-button:hover + .navigation-bar:hover {
+    display: block;
+}
+
+.navigation-bar:hover{
+    display:block;
+}
+
+.nav-option:hover{
+    background-color: lightgray;
+}
+
+#menu-button:hover + .navigation-bar{
+    display: block;
+    cursor: pointer;
+}
+
+#page-title{
+   font-size: 25px;
+   margin-top: 0;
+}
+
+#icon {
+    height: 2em;
+    margin-right: 1em;
+}
+
+#banner{
+    height: 20em;
+    background-size: cover;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.impactteachers.com%2Fwp-content%2Fuploads%2F2017%2F11%2FBooks-1920x1280.jpg&f=1&nofb=1");
+    color: white;
+}
+
+#banner-text{
+    width: 50%;
+    margin-left: 3em;
+    padding-top: 2rem;
+}
+
+#banner-title{
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+#banner-subtitle{
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    margin: 1rem 0;
+    font-weight: lighter;
+}
+
+button {
+    padding: 0.85rem 1.5rem;
+    font-weight: bold;
+    background-color: darkslategray;
+    color: white;
+    border: 1px solid lightgray;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+
+#sub-banner{
+    height: 10rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 5rem 0;
+}
+
+#sub-banner-text{
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+#sub-banner-image{
+    height: 2rem;
+    width: 2rem;
+}
+
+p{
+    font-size: 0.76rem;
+    text-align: center;        
+}
+
+#card-container{
+    display: grid;
+    grid-template-columns: 20rem;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items:center;
+}
+
+.card{
+    height: 12rem;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.card:hover{
+    opacity: 0.75;
+}
+
+.card-img{
+    height: 85%;
+    width: 100%;
+    margin: 0;
+}
+
+.card-text{
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 5px;
+}
+
+@media (min-width: 600px) {
+
+    #page-title{
+        font-size: 30px;
+     }
+     
+     #icon {
+         height: 2.5em;
+     }
+
+    #menu-button{
+        display: none;
+    }
+
+    #current{
+        border-bottom: 1px solid gray;
+    }
+
+    .navigation-bar{
+        display: block;
+        position: relative;
+        top: 10px;
+        margin-bottom: 2rem;
+        background-color: none;
+    }
+    
+    .nav-option{
+        display: inline-block;
+        padding: 10px 10px;
+        margin: 0 2rem;
+        border: 1px solid white;
+    }
+    
+    .navigation-bar li:hover{
+        border-bottom: 1px solid gray;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #icon {
+        height: 2.5em;
+        margin-right: 1em;
+    }
+
+    #banner-text{
+        margin-left: 5em;
+        padding-top: 5rem;
+    }
+
+    #banner-title{
+        font-size: 2.5rem;
+    }
+
+    #banner-subtitle{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 0.85rem;
+        margin: 0;
+    }
+    
+    #card-container{
+        grid-template-columns: 20rem 20rem 20rem;
+        column-gap: 5rem;
+        justify-content: center;
+    }
+
+    .card{
+        height: 15rem;
+    }
+}
